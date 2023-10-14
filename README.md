@@ -35,18 +35,18 @@ dtu_training
 **Testing Data**. Download [DTU testing data](https://drive.google.com/file/d/135oKPefcPTsdtLRzoDAQtPpHuoIrpRI_/view) and unzip it. The structure is just like:
 ```
 origin                          
-       ├── scan1                
-       ├── scan2   
+	├── scan1                
+	├── scan2   
        		├── cams
-				├── 00000000_cam.txt
-				├── 00000001_cam.txt
-				├── ...
-			├── images
-				├── 00000000.jpg
-				├── 00000001.jpg
-				├── ...
-			├── pair.txt
-		├── ...
+			├── 00000000_cam.txt
+			├── 00000001_cam.txt
+			├── ...
+		├── images
+			├── 00000000.jpg
+			├── 00000001.jpg
+			├── ...
+		├── pair.txt
+	├── ...
 ```
 
 
