@@ -83,5 +83,5 @@ If you find our work useful in your research please consider citing our paper:
 
 ## 👩‍ Acknowledgements
 
-Thanks to [MVSNet](https://github.com/YoYo000/MVSNet), [MVSNet_pytorch](https://github.com/xy-guo/MVSNet_pytorch), [CasMVSNet](https://github.com/alibaba/cascade-stereo/tree/master/CasMVSNet), [RCMVSNet](https://github.com/Boese0601/RC-MVSNet) and [UniMVSNet](https://github.com/prstrive/UniMVSNet), 
+Thanks to [MVSNet](https://github.com/YoYo000/MVSNet), [MVSNet_pytorch](https://github.com/xy-guo/MVSNet_pytorch), [CasMVSNet](https://github.com/alibaba/cascade-stereo/tree/master/CasMVSNet), [RC-MVSNet](https://github.com/Boese0601/RC-MVSNet) and [UniMVSNet](https://github.com/prstrive/UniMVSNet), 
 
