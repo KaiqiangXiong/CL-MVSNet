@@ -50,7 +50,6 @@ parser.add_argument('--eval_freq', type=int, default=1, help='eval freq')
 parser.add_argument('--summary_freq', type=int, default=50, help='print and summary frequency')
 
 # testing
-
 parser.add_argument("--test", action="store_true")
 parser.add_argument('--outdir', default='./outputs', help='output dir')
 parser.add_argument('--num_worker', type=int, default=4, help='depth_filer worker')
