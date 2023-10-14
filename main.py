@@ -21,7 +21,6 @@ parser.add_argument('--batch_size', type=int, default=1, help='train batch size'
 parser.add_argument('--numdepth', type=int, default=192, help='the number of depth values')
 parser.add_argument('--interval_scale', type=float, default=1.06, help='the number of depth values')
 parser.add_argument("--nviews", type=int, default=5)
-# # only for train and eval
 parser.add_argument("--inverse_depth", action="store_true")
 
 # training and val
