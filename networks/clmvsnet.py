@@ -254,7 +254,7 @@ class CasMVSNet(nn.Module):
         if icc:
             imgs_icc = data["imgs_aug"] # b v c h w
             nviews = imgs_icc.shape[1]
-            for view_idx in range(1, nviews, 1):   # loops through view dimension instead of batch dimension
+            for view_idx in range(1, nviews, 1):   # Thanks AlexRich~
                 per = min(self.args.p_icc * epoch / 15, self.args.p_icc)
                 mask = torch.ones_like(imgs_icc[:, view_idx]) * per
                 mask = 1 - mask.bernoulli() 
