@@ -250,14 +250,15 @@ class CasMVSNet(nn.Module):
         outputs = {} 
         imgs = data["imgs"]               
         proj_matrices = data["proj_matrices"] 
-
+        
         if icc:
-            imgs_icc = data["imgs_aug"] # n c h w
-            for imgs_icc in imgs_icc[1:]:
+            imgs_icc = data["imgs_aug"] # b v c h w
+            nviews = imgs_icc.shape[1]
+            for view_idx in range(1, nviews, 1):   # loops through view dimension instead of batch dimension
                 per = min(self.args.p_icc * epoch / 15, self.args.p_icc)
-                mask = torch.ones_like(imgs_icc) * per
+                mask = torch.ones_like(imgs_icc[:, view_idx]) * per
                 mask = 1 - mask.bernoulli() 
-                imgs_icc = imgs_icc * mask
+                imgs_icc[:, view_idx] = imgs_icc[:, view_idx] * mask
             ref_img = imgs_icc[:, 0]
             ref_img, filter_mask = random_image_mask(ref_img, filter_size=(ref_img.size(2) // 3, ref_img.size(3) // 3))
             imgs_icc[:, 0] = ref_img
