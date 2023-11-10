@@ -12,7 +12,7 @@ Details are described in our paper:
     <img src="./.github/images/comparison.png" width="100%"/>
 </p>
 
-CL-MVSNet is more robust on theindistinguishable regions and view-dependent effects. The point cloud is more complete and accurate than previous methods.
+CL-MVSNet is more robust on the indistinguishable regions and view-dependent effects. The point cloud is more complete and accurate than previous methods.
 
 *If there are any errors in our code, please feel free to ask your questions.*
 
